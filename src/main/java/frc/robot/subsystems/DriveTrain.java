@@ -37,14 +37,14 @@ public class DriveTrain extends SubsystemBase {
   SpeedControllerGroup leftController,rightController;
   DifferentialDrive diffDrive;
   public DriveTrain() {
-    left = new WPI_TalonSRX(0);
+    left = new WPI_TalonSRX(1);
     right = new WPI_TalonSRX(0);
 
-    leftFollower = new WPI_VictorSPX(0);
+    leftFollower = new WPI_VictorSPX(1);
     rightFollower = new WPI_VictorSPX(0);
   
     solenoid = new Solenoid(0);
-
+    
     leftFollower.follow(left);
     rightFollower.follow(right);
     leftController = new SpeedControllerGroup(left,leftFollower);
