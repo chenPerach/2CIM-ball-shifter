@@ -26,7 +26,7 @@ public class ArcadeDrive extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    this.driveTrain.arcadeDrive(speed.getAsDouble(), rot.getAsDouble());
+    this.driveTrain.arcadeDrive(speed.getAsDouble()*0.85, rot.getAsDouble()*0.9);
   }
 
   // Called once the command ends or is interrupted.
