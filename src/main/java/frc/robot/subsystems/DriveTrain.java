@@ -24,8 +24,6 @@ public class DriveTrain extends SubsystemBase {
     }
   }
 
-
-
   WPI_TalonSRX left,right;
   WPI_VictorSPX leftFollower,rightFollower;
 
